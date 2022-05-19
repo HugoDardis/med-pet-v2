@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #1B2029;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+a {
+  text-decoration: none;
+  background: none;
+}
+
+#root,
+#__node {
+  isolation: isolate;
+}
+
+label {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+input[type="text" i],
+input[type="number" i],
+input[type="email"] {
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #C3CFD5;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #66808F;
+}
+
+input[type="checkbox"i] {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./components/head.ejs') %>
+<body>
+    <!-- <%- include('./components/header.ejs')%> -->
+    <main id="">
+       <section class="p-22">
+        
+        <h1 class="aitens-start secundary-text">CADASTRAR CONSULTÓRIO</h1>
+        
+        <div class="flex w-100 center">
+        
+        <div class="bg-forms w-75">
+          <div class="flex center normal-text">
+            <h2 class="">Insira os dados do Consultório a ser cadastrado:</h2>
+          </div>
+          <form action="#">
+            <div class="flex space-between">
+            <div class="w-50 mr-5">
+              <span class="w-50">
+                <label for="#">Nome do consultório</label>
+                <input placeholder="Digite Nome do consultório" name="#" type="text">
+              </span>
+              <span class="w-50">
+                <label for="#">Endereço</label>
+                <input placeholder="Digite o endereço do consultório" name="#" type="text">
+              </span>
+              <span class="w-50">
+                <label for="name">Animais que atende</label>
+                <input placeholder="Selecione Animais" name="#" type="text">
+              </span>
+              <span class="w-50">
+                <label for="name">Telefone</label>
+                <input placeholder="(xx) 99999-9999" name="#" type="text">
+              </span>
+            </div>
+            <div class="w-50">
+              <span class="w-100">
+                <label for="name">CEP</label>
+                <input placeholder="Digite CEP do consultório" name="#" type="text">
+              </span>
+              <span class="w-100">
+                <label for="name">UF</label>
+                <input placeholder="UF" name="UF" type="text">
+              </span>
+              <span class="w-100">
+                <label for="name">Numero</label>
+                <input placeholder="Digite numero do consultório" name="#" type="text">
+              </span>
+              <span class="w-100">
+                <label for="name">Complemento</label>
+                <input placeholder="EX. bloco, andar, sala " name="#" type="text">
+              </span>
+              <span class="w-100">
+                <label for="email">E-mail</label>
+                <input placeholder="medpet@medpet.com.br" name="#" type="email">
+              </span>
+            </div>  
+          </div>
+          </form>
+            <div class="flex mb-22">
+              <input class="mr-5" type="checkbox">
+              <p class="normal-text">Eu declaro que li e aceito todos os Termos de Uso contidos na<a class="link" href="#">Política de Privacidade.</a></p>
+            </div>
+  
+            <div class="center box w-50">
+              <div class="button-black box mb-22">
+                <a href="*">Cadastrar</a>
+              </div>
+  
+              <div class="button-cancel secondary-font">
+                <a href="*">Cancelar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('./components/footer.ejs')%>
+</body>
+</html>
