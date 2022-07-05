@@ -2,7 +2,7 @@
 
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.crreateTable(
+    await queryInterface.createTable(
       'servpetconsul',
       {
         pet_id: {
