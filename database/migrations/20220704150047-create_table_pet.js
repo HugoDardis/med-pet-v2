@@ -13,7 +13,8 @@ module.exports = {
         },
         RGA: {
           type: Sequelize.DataTypes.STRING(45),
-          allowNull:true
+          allowNull:true,
+          unique: true,
         },
         raca: {
           type: Sequelize.DataTypes.STRING(45),
