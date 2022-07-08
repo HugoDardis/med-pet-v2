@@ -20,7 +20,7 @@ module.exports = {
             nome: `consultorio ${i}`,
             email: `consultorio2${i}@teste.com`,
             senha: bcrypt.hashSync('123456', 10),
-            CNPJ:`12345678912311${i}`
+            CNPJ:`12345678912311${i}`,
             createdAt:(new Date()).toJSON().substring(0,19)
           },
           {
@@ -28,7 +28,7 @@ module.exports = {
             nome: `consultorio ${i}`,
             email: `consultorio3${i}@teste.com`,
             senha: bcrypt.hashSync('123456', 10),
-            CNPJ:`12345678912345${i}`,
+            CNPJ:`12345678912395${i}`,
             createdAt: (new Date()).toJSON().substring(0,19)
           },
           {
@@ -44,7 +44,7 @@ module.exports = {
             nome: `consultorio ${i}`,
             email: `consultorio5${i}@teste.com`,
             senha: bcrypt.hashSync('123456', 10),
-            CNPJ:`1234567891234554${i}`,
+            CNPJ:`123456789123554${i}`,
             createdAt: (new Date()).toJSON().substring(0,19)
           },
       )
