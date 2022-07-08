@@ -20,9 +20,9 @@ module.exports = {
           allowNull: false,
           references:{
             model: {
-              tableName:"consultorios"
+              tableName:"servicos_do_consultorio"
             },
-            key:"id"
+            key:"consultorios_id"
           }
         },
         servico_id:{
@@ -30,9 +30,9 @@ module.exports = {
           allowNull: false,
           references:{
             model:{
-              tableName:"servicos"
+              tableName:"servicos_do_consultorio"
             },
-            key:"id"
+            key:"servicos_id"
           }
         },
         agentamento:{
