@@ -35,7 +35,7 @@ module.exports = {
             key:"servicos_id"
           }
         },
-        agentamento:{
+        agendamento:{
           type: Sequelize.DataTypes.DATE,
           allowNull:false,
         },
