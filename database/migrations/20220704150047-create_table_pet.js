@@ -16,6 +16,10 @@ module.exports = {
           allowNull:true,
           unique: true,
         },
+        nome: {
+          type: Sequelize.DataTypes.STRING(200),
+          allowNull: false
+        },
         raca: {
           type: Sequelize.DataTypes.STRING(45),
         },
