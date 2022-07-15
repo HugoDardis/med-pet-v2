@@ -1,17 +1,20 @@
-Fase 1 /register:
-     ☐ Apontar o formulário (post) para uma /register
-     ☐ Criar rota post para /register
-     ☐ Criar um usuario controller para fazer a UsuariosController.registrar
-
+Fase 1 - registro de usuário - /register:
+    ☐ Model de Usuário
+    ✔ Apontar o formulário (post) para uma /register @done(22-07-15 10:58)
+    ✔ Criar rota post para /register @done(22-07-15 10:58)
+    ☐ Criar um usuario controller para fazer a UsuariosController.registrar
+    ☐ Fazer registro de usuário adicionar o usuário no banco
+    ☐ Criar uma session para o usuário (req.session.usuario)
+    ☐ Direcionar ele a home indentificando o visitante como usuário logado.
 
 Fase 2 /login:
     ✔ Apontar o formulário de login (post) pra rota /login @done(22-07-15 10:14)
     ✔ Criar a rota post para /login @done(22-07-15 10:14)
     ✔ Criar um usuario controller para fazer a UsuariosController.login @done(22-07-15 10:14)
+    ☐ Fazer com que UsuariosController.login configure session (req.session.usuario) e redirecione para /home em caso sucesso
+    ☐ Criar um middleware para verificar se o usuário está logad. Ou seja, se req.session.usuario está configurado 
 
 Fase 3 Models:
-    
-    ☐ Model de Usuário
     ☐ Model Consultórios
     ☐ Model Servicos
     ☐ Model Pet
