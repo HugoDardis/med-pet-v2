@@ -8,3 +8,10 @@ Fase 2 /login:
     ☐ Apontar o formulário de login (post) pra rota /login
     ☐ Criar a rota post para /login
     ☐ Criar um usuario controller para fazer a UsuariosController.login
+
+Fase 3 Models:
+    
+    ☐ Model de Usuário
+    ☐ Model Consultórios
+    ☐ Model Servicos
+    ☐ Model Pet
