@@ -58,7 +58,7 @@ module.exports = {
       {
         pet_id: 4,
         consultorio_id: 4,
-        servico_id: 4,
+        servico_id: 7,
         agendamento: new Date('2022-07-08T15:00:00.000Z'),
         horamarcada: new Date('2022-07-08T15:00:00.000Z'),
         horacancelada: null,
