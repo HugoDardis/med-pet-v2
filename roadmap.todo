@@ -5,9 +5,9 @@ Fase 1 /register:
 
 
 Fase 2 /login:
-    ☐ Apontar o formulário de login (post) pra rota /login
-    ☐ Criar a rota post para /login
-    ☐ Criar um usuario controller para fazer a UsuariosController.login
+    ✔ Apontar o formulário de login (post) pra rota /login @done(22-07-15 10:14)
+    ✔ Criar a rota post para /login @done(22-07-15 10:14)
+    ✔ Criar um usuario controller para fazer a UsuariosController.login @done(22-07-15 10:14)
 
 Fase 3 Models:
     
@@ -15,3 +15,4 @@ Fase 3 Models:
     ☐ Model Consultórios
     ☐ Model Servicos
     ☐ Model Pet
+
