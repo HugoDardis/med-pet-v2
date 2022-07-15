@@ -1,0 +1,10 @@
+Fase 1 /register:
+     ☐ Apontar o formulário (post) para uma /register
+     ☐ Criar rota post para /register
+     ☐ Criar um usuario controller para fazer a UsuariosController.registrar
+
+
+Fase 2 /login:
+    ☐ Apontar o formulário de login (post) pra rota /login
+    ☐ Criar a rota post para /login
+    ☐ Criar um usuario controller para fazer a UsuariosController.login
