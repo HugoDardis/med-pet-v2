@@ -45,11 +45,11 @@ module.exports = {
         },
         horarealizada:{
           type:Sequelize.DataTypes.DATE,
-          allowNull:false
+          allowNull:true
         },
         horacancelada:{
           type: Sequelize.DataTypes.DATE,
-          allowNull:false
+          allowNull:true
         },
         createdAt:Sequelize.DataTypes.DATE,
         updatedAt:Sequelize.DataTypes.DATE,
