@@ -1,21 +1,69 @@
-Fase 1 - registro de usuário - /register:
-    ✔ Model de Usuário @done(22-07-20 10:44)
-    ✔ Apontar o formulário (post) para uma /register @done(22-07-15 10:58)
-    ✔ Criar rota post para /register @done(22-07-15 10:58)
-    ☐ Criar um usuario controller para fazer a UsuariosController.registrar
+Página Inicial:
+    ☐ Diminuir logo e fazer com que ela mantenha proporções
+    ☐ Fazer com que não seja necessário rolar a página para ver login/registrar
+    ☐ Adicionar um link para cadastrar consultório (endereço /cadastrar-consultorio)
+    ☐ Adicionar link para login de consultório (endereço /login-consultorio)
+    ☐ Trabalhar o footer
+    
+Página de registro de cliente:
+    ☐ Reposicionar o dizer "Olá! Este espaço foi criado para você!" para cima
+    ☐ Centralizar o formulário de registro
+    ☐ Por botões cancelar e cadastrar lado a lado abaixo do aceite
+    ☐ Fazer o cancelar limpar o formulário
+    ☐ Fazer o form enviar para rota POST '/register'
+    ☐ Fazer o controller UsuariosController.registrar()
     ☐ Fazer registro de usuário adicionar o usuário no banco
     ☐ Criar uma session para o usuário (req.session.usuario)
-    ☐ Direcionar ele a home indentificando o visitante como usuário logado.
+    ☐ Fazer validação do formulário com o express-validator
+    ☐ Mostrar mensagens de erro no formulário
+    ☐ Voltar para a página home com a home o identificando como usuário logado
 
-Fase 2 /login:
-    ✔ Apontar o formulário de login (post) pra rota /login @done(22-07-15 10:14)
-    ✔ Criar a rota post para /login @done(22-07-15 10:14)
-    ✔ Criar um usuario controller para fazer a UsuariosController.login @done(22-07-15 10:14)
+Página de cadastrar consultório:
+    ☐ Remover CADASTRAR CONSULTÓRIO
+    ☐ Por botões cancelar e cadastrar lado a lado abaixo do aceite
+    ☐ Fazer o form apontar para POST '/cadastrar-consultorio'
+    ☐ Criar a rota POST '/cadastrar-consultorio'
+    ☐ Criar o controller ConsultoriosController.cadastrar()
+    ☐ Criar um novo consultório no banco de dados
+    ☐ Fazer validação do formulário com o express-validator mostrando erros no formulário
+    ☐ Adicionar o consultório no banco de dados
+    ☐ Setar a session com o consultório logado
+    ☐ Direcionar para endereço /consultorio
+
+Página home do consultório:
+    ☐ Fazer um middleware para identificar se o consultório está logado
+        - Se logado, mostrar a home do consultorio
+        - Se não logado, redirecionar para página de login do consultorio
+    ☐ Criar rota get /consultorio => mostrar com links para:
+        - cadastrar/editar/excluir serviços (endereço: /consultorio/servicos)
+        - ver a agenda do consultório (endereço: /consultorio/agenda)
+
+Página da agenda do consultório:
+    ☐ Rota /consultorio/agenda => exibir agenda
+
+Página de cadastro de serviços:
+    ☐ Rota /consultorio/servicos => Listar, de todos os serviços possíveis, quais são os serviços do consultório
+    ☐ Possibilitar o consultório a marcar/desmarcar mais outros servicos (checkbox)
+
+Página de login do cliente:
     ☐ Fazer com que UsuariosController.login configure session (req.session.usuario) e redirecione para /home em caso sucesso
-    ☐ Criar um middleware para verificar se o usuário está logad. Ou seja, se req.session.usuario está configurado 
+    ☐ Criar um middleware para verificar se o usuário está logad. Ou seja, se req.session.usuario está configurado
+    ☐ Mostrar na home do cliente os agendamentos e link para realizar um agendamento
+    ☐ Link para logout
 
-Fase 3 Models:
-    ✔ Model Consultórios @done(22-07-20 10:44)
-    ✔ Model Servicos @done(22-07-20 10:44)
-    ✔ Model Pet @done(22-07-20 10:44)
+Página de login do consultório:
+    ☐ Fazer com que UsuariosController.login configure session (req.session.consultorio) e redirecione para /consultorio em caso sucesso
+    ☐ Criar um middleware para verificar se o usuário está logad. Ou seja, se req.session.consultorio está configurado 
 
+Archive:
+  ✔ Model de Usuário @done(22-07-20 10:44) @project(Fase 1 - registro de usuário - /register)
+  ✔ Apontar o formulário (post) para uma /register @done(22-07-15 10:58) @project(Fase 1 - registro de usuário - /register)
+  ✔ Criar rota post para /register @done(22-07-15 10:58) @project(Fase 1 - registro de usuário - /register)
+  ✘ Criar um usuario controller para fazer a UsuariosController.registrar @cancelled(22-07-20 11:01) @project(Fase 1 - registro de usuário - /register)
+  ✘ Direcionar ele a home indentificando o visitante como usuário logado. @cancelled(22-07-20 11:01) @project(Fase 1 - registro de usuário - /register)
+  ✔ Apontar o formulário de login (post) pra rota /login @done(22-07-15 10:14) @project(Fase 2 /login)
+  ✔ Criar a rota post para /login @done(22-07-15 10:14) @project(Fase 2 /login)
+  ✔ Criar um usuario controller para fazer a UsuariosController.login @done(22-07-15 10:14) @project(Fase 2 /login)
+  ✔ Model Consultórios @done(22-07-20 10:44) @project(Fase 3 Models)
+  ✔ Model Servicos @done(22-07-20 10:44) @project(Fase 3 Models)
+  ✔ Model Pet @done(22-07-20 10:44) @project(Fase 3 Models)
