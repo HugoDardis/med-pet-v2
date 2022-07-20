@@ -9,7 +9,7 @@ Página de registro de cliente:
     ☐ Reposicionar o dizer "Olá! Este espaço foi criado para você!" para cima
     ☐ Centralizar o formulário de registro
     ☐ Por botões cancelar e cadastrar lado a lado abaixo do aceite
-    ☐ Fazer o cancelar limpar o formulário
+    ✔ Fazer o cancelar limpar o formulário @done(22-07-20 15:34)
     ☐ Fazer o form enviar para rota POST '/registrar'
     ☐ Fazer o controller UsuariosController.registrar()
     ☐ Fazer registro de usuário adicionar o usuário no banco

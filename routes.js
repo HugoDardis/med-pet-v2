@@ -19,7 +19,7 @@ routes.post('/login', UsuariosController.login);
 
 routes.get('/registrar', IndexController.verPaginaDeRegistro);
 
-//routes.put('/registrar', usuariosController.novoUsuario);
+routes.post('/registrar', UsuariosController.novoUsuario);
 
 routes.get('/home01', IndexController.verPaginaDeHome01);
 
