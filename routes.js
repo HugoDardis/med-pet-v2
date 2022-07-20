@@ -1,4 +1,6 @@
-const { Router } = require('express');
+const {
+  Router
+} = require('express');
 const express = require('express');
 const routes = express.Router();
 const IndexController = require('./controllers/IndexController');
@@ -15,12 +17,12 @@ routes.get('/login', IndexController.verPaginaDeLogin);
 
 routes.post('/login', UsuariosController.login);
 
-routes.get('/register', IndexController.verPaginaDeRegistro);
+routes.get('/registrar', IndexController.verPaginaDeRegistro);
 
-//routes.put('/register', usuariosController.novoUsuario);
+//routes.put('/registrar', usuariosController.novoUsuario);
 
 routes.get('/home01', IndexController.verPaginaDeHome01);
 
-routes.get('/cadastrar-consultorio', IndexController.verPaginaDeCadastrarConsultorio); 
+routes.get('/cadastrar-consultorio', IndexController.verPaginaDeCadastrarConsultorio);
 
 module.exports = routes;

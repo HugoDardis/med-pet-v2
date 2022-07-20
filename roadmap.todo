@@ -10,7 +10,7 @@ Página de registro de cliente:
     ☐ Centralizar o formulário de registro
     ☐ Por botões cancelar e cadastrar lado a lado abaixo do aceite
     ☐ Fazer o cancelar limpar o formulário
-    ☐ Fazer o form enviar para rota POST '/register'
+    ☐ Fazer o form enviar para rota POST '/registrar'
     ☐ Fazer o controller UsuariosController.registrar()
     ☐ Fazer registro de usuário adicionar o usuário no banco
     ☐ Criar uma session para o usuário (req.session.usuario)
@@ -56,11 +56,11 @@ Página de login do consultório:
     ☐ Criar um middleware para verificar se o usuário está logad. Ou seja, se req.session.consultorio está configurado 
 
 Archive:
-  ✔ Model de Usuário @done(22-07-20 10:44) @project(Fase 1 - registro de usuário - /register)
-  ✔ Apontar o formulário (post) para uma /register @done(22-07-15 10:58) @project(Fase 1 - registro de usuário - /register)
-  ✔ Criar rota post para /register @done(22-07-15 10:58) @project(Fase 1 - registro de usuário - /register)
-  ✘ Criar um usuario controller para fazer a UsuariosController.registrar @cancelled(22-07-20 11:01) @project(Fase 1 - registro de usuário - /register)
-  ✘ Direcionar ele a home indentificando o visitante como usuário logado. @cancelled(22-07-20 11:01) @project(Fase 1 - registro de usuário - /register)
+  ✔ Model de Usuário @done(22-07-20 10:44) @project(Fase 1 - registro de usuário - /registrar)
+  ✔ Apontar o formulário (post) para uma /registrar @done(22-07-15 10:58) @project(Fase 1 - registro de usuário - /registrar)
+  ✔ Criar rota post para /registrar @done(22-07-15 10:58) @project(Fase 1 - registro de usuário - /registrar)
+  ✘ Criar um usuario controller para fazer a UsuariosController.registrar @cancelled(22-07-20 11:01) @project(Fase 1 - registro de usuário - /registrar)
+  ✘ Direcionar ele a home indentificando o visitante como usuário logado. @cancelled(22-07-20 11:01) @project(Fase 1 - registro de usuário - /registrar)
   ✔ Apontar o formulário de login (post) pra rota /login @done(22-07-15 10:14) @project(Fase 2 /login)
   ✔ Criar a rota post para /login @done(22-07-15 10:14) @project(Fase 2 /login)
   ✔ Criar um usuario controller para fazer a UsuariosController.login @done(22-07-15 10:14) @project(Fase 2 /login)

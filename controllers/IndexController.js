@@ -13,9 +13,9 @@ const IndexController = {
         /* let listaDeContatos = require('./contatos.json'); */
 
         res.render('contato', {
-            title: "contato", 
-         })
-         
+            title: "contato",
+        })
+
     },
 
     verPaginaDeProdutos: (req, res) => {
@@ -31,7 +31,7 @@ const IndexController = {
     },
 
     verPaginaDeRegistro: (req, res) => {
-        res.render('register', {
+        res.render('registrar', {
             title: "MEDPET - REGISTER"
         })
     },
@@ -41,7 +41,7 @@ const IndexController = {
             title: "MEDPET - HOME"
         })
     },
-    
+
     verPaginaDeCadastrarConsultorio: (req, res) => {
         res.render('cadastrar-consultorio', {
             title: "CADASTRAR - CONSULTORIO"
