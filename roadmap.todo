@@ -1,5 +1,5 @@
 Fase 1 - registro de usuário - /register:
-    ☐ Model de Usuário
+    ✔ Model de Usuário @done(22-07-20 10:44)
     ✔ Apontar o formulário (post) para uma /register @done(22-07-15 10:58)
     ✔ Criar rota post para /register @done(22-07-15 10:58)
     ☐ Criar um usuario controller para fazer a UsuariosController.registrar
@@ -15,7 +15,7 @@ Fase 2 /login:
     ☐ Criar um middleware para verificar se o usuário está logad. Ou seja, se req.session.usuario está configurado 
 
 Fase 3 Models:
-    ☐ Model Consultórios
-    ☐ Model Servicos
-    ☐ Model Pet
+    ✔ Model Consultórios @done(22-07-20 10:44)
+    ✔ Model Servicos @done(22-07-20 10:44)
+    ✔ Model Pet @done(22-07-20 10:44)
 
