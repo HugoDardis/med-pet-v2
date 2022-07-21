@@ -5,7 +5,7 @@ const express = require('express');
 const routes = express.Router();
 const IndexController = require('./controllers/IndexController');
 const UsuariosController = require('./controllers/UsuariosController');
-
+const ConsultoriosController = require('./controllers/ConsultoriosController');
 
 routes.get('/', IndexController.verPaginaInicial);
 
@@ -23,6 +23,9 @@ routes.post('/registrar', UsuariosController.novoUsuario);
 
 routes.get('/home01', IndexController.verPaginaDeHome01);
 
-routes.get('/cadastrar-consultorio', IndexController.verPaginaDeCadastrarConsultorio);
+routes.post('/cadastrar-consultorio', ConsultoriosController.cadastrar);
+
+routes.get('/cadastrar-consultorio', IndexController.verPaginaDeCadastrarConsultorio); 
 
 module.exports = routes;
+
