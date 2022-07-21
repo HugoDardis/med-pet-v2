@@ -2,51 +2,57 @@ const express = require('express');
 const path = require('path');
 
 const IndexController = {
-    verPaginaInicial: (req, res) => {
-        res.render('home', {
-            title: "Página Inical"
-        });
-    },
+        verPaginaInicial: (req, res) => {
+            res.render('home', {
+                title: "Página Inical"
+            });
+        },
 
 
-    verPaginaContato: (req, res) => {
-        /* let listaDeContatos = require('./contatos.json'); */
+        verPaginaContato: (req, res) => {
+            
 
-        res.render('contato', {
-            title: "contato", 
-         })
-         
-    },
+            res.render('contato', {
+                title: "contato",
+            })
 
-    verPaginaDeProdutos: (req, res) => {
-        res.render('produto', {
-            title: "Página de Produtos"
-        })
-    },
+        },
 
-    verPaginaDeLogin: (req, res) => {
-        res.render('login', {
-            title: "MEDPET - LOGIN"
-        })
-    },
+        verPaginaDeProdutos: (req, res) => {
+            res.render('produto', {
+                title: "Página de Produtos"
+            })
+        },
 
-    verPaginaDeRegistro: (req, res) => {
-        res.render('register', {
-            title: "MEDPET - REGISTER"
-        })
-    },
+        verPaginaDeLogin: (req, res) => {
+            res.render('login', {
+                title: "MEDPET - LOGIN"
+            })
+        },
 
-    verPaginaDeHome01: (req, res) => {
-        res.render('home01', {
-            title: "MEDPET - HOME"
-        })
-    },
-    
-    verPaginaDeCadastrarConsultorio: (req, res) => {
-        res.render('cadastrar-consultorio', {
-            title: "CADASTRAR - CONSULTORIO"
-        })
-    }
-}
+        verPaginaDeRegistro: (req, res) => {
+            res.render('registrar', {
+                title: "MEDPET - REGISTER"
+            })
+        },
 
-module.exports = IndexController;
+        UsuariosControlerRegistrar: (req, res) => {
+            res.render('registrar', {
+                title: "MEDPET - REGISTRAR"
+            })
+        },
+
+            verPaginaDeHome01: (req, res) => {
+                    res.render('home01', {
+                        title: "MEDPET - HOME"
+                    })
+                },
+
+                verPaginaDeCadastrarConsultorio: (req, res) => {
+                    res.render('cadastrar-consultorio', {
+                        title: "CADASTRAR - CONSULTORIO"
+                    })
+                }
+        }
+
+        module.exports = IndexController;

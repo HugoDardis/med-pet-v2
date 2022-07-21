@@ -8,6 +8,7 @@ const routes = require('./routes');
 app.set('view engine', 'ejs');
 app.set('views', path.resolve('views'));
 app.use(express.static('public'));
+app.use(express.urlencoded({ extended: false }));
 
 // Rotas
 app.use(routes);

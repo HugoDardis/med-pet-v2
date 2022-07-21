@@ -13,5 +13,14 @@ module.exports ={
         console.log(error);
         res.status(500).json({error});
     }
+
+    const novoCliente = await Cliente.create({
+        CPF,
+        nome,
+        email,
+        senha,
+    });
+    res.send(novoCliente);
+
     } 
 }
