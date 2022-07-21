@@ -6,6 +6,7 @@ module.exports = {
     login: (req, res) => {
         res.send("Controller para realizar login!");
     },
+
     novoUsuario: async (req, res) => {
         const {
             CPF,
@@ -21,9 +22,11 @@ module.exports = {
             email,
             senha: senhaCript,
         });
-        res.send(novoCliente);
+        req.session.cliente = novoCliente;
+        return res.redirect('/home01');
 
     },
+    
     listarClientes: async (req, res) => {
         const clientes = await Cliente.findAll();
         res.send(clientes);
