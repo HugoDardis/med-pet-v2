@@ -1,0 +1,61 @@
+:root {
+    --header-bg: #000;
+    --primary: #7A48EB;
+}
+
+#home-consultorio{
+    font-family: 'Roboto';
+}
+
+#home-consultorio header{
+    background-color: #000;
+}
+
+#home-consultorio header ul {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#home-consultorio header ul li{
+    display: inline-block;
+}
+
+
+#home-consultorio header ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #FFF;
+}
+
+#home-consultorio header ul li a:hover{
+    background-color: var(--primary);
+    color: #FFF;
+}
+
+#home-consultorio header ul li:last-child{
+    margin-left: auto;
+}
+
+#home-consultorio main {
+    
+}
+
+#home-consultorio main h2{
+
+}
+
+#home-consultorio main section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    background-color: #7A48EB;
+    margin-top: 20px;
+}
+
+#home-consultorio main section label{
+
+}
