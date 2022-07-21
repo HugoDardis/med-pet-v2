@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt');
 module.exports ={
     cadastrar: async (req, res) => {
         try{
-            const {cnpj, email, senha} = req.body;
+            const {CNPJ, email, senha} = req.body;
 
             return res.json(req.body);
         }
@@ -15,8 +15,7 @@ module.exports ={
     }
 
     const novoConsultorio = await Consultorio.create({
-        CPF,
-        nome,
+        CNPJ,
         email,
         senha,
     });
