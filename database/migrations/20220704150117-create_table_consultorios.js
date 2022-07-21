@@ -10,14 +10,38 @@ module.exports = {
         allowNull: false,
         primaryKey: true
       },
-      CNPJ: {
-        type: Sequelize.DataTypes.STRING(45),
+      nome: {
+        type: Sequelize.DataTypes.STRING(120),
         allowNull: false
+      },
+      cep:{
+        type: Sequelize.DataTypes.STRING(8),
+        allowNull: false
+      },
+      uf:{
+        type: Sequelize.DataTypes.STRING(2),
+        allowNull: false
+      },
+      endereco: {
+        type: Sequelize.DataTypes.STRING(600),
+        allowNull: false
+      },
+      numero: {
+        type: Sequelize.DataTypes.STRING(6),
+        allowNull: true
       },
       email: {
         type: Sequelize.DataTypes.STRING(45),
         allowNull: false,
         unique:true
+      },
+      telefone: {
+        type: Sequelize.DataTypes.STRING(15),
+        allowNull: false
+      },
+      complemento: {
+        type: Sequelize.DataTypes.STRING(100),
+        allowNull: true
       },
       senha:{
         type: Sequelize.DataTypes.STRING(64),
