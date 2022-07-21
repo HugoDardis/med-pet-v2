@@ -14,13 +14,13 @@ module.exports ={
         res.status(500).json({error});
     }
 
-    const novoCliente = await Cliente.create({
+    const novoConsultorio = await Consultorio.create({
         CPF,
         nome,
         email,
         senha,
     });
-    res.send(novoCliente);
+    res.send(novoConsultorio);
 
     } 
 }
