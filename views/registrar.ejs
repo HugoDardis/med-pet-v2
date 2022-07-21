@@ -27,19 +27,19 @@
               <form id="registrarForm" method="POST" action="/registrar">
                 <div class="flex space-between">
                   <span class="name w-50 mr-5">
-                    <label for="name">Nome</label>
-                    <input placeholder="Digite seu Nome" name="name" type="text">
+                    <label for="nome">Nome</label>
+                    <input placeholder="Digite seu Nome" name="nome" type="text">
                   </span>
                   <span class="last-name w-50 mr-5">
-                    <label for="lastname">Sobrenome</label>
-                    <input placeholder="Digite seu Sobrenome" name="lastname" type="text">
+                    <label for="senha">Senha</label>
+                    <input placeholder="Digite sua senha" name="senha" type="password">
                   </span>
                 </div>
 
                 <div class="flex space-between">
                   <span class="e-mail w-50 mr-5">
-                    <label for="e-mail">E-mail</label>
-                    <input name="e-mail" type="email" placeholder="Digite seu e-mail">
+                    <label for="email">E-mail</label>
+                    <input name="email" type="email" placeholder="Digite seu e-mail">
                   </span>
                   <span class="telefone w-50 mr-5">
                     <label for="telefone">Telefone</label>
@@ -50,24 +50,29 @@
                 <div class="flex space-between">
                   <span class="cpf w-50 mr-5">
                     <label for="CPF">CPF</label>
-                    <input placeholder="Digite seu CPF" name="CPF" type="number">
+                    <input placeholder="Digite seu CPF" name="CPF">
                   </span>
 
                 </div>
+
+                <div class="flex mb-22">
+                  <input class="mr-5" type="checkbox">
+                  <p class="normal-text">Eu declaro que li e aceito todos os Termos de Uso contidos na<a class="link" href="#">Política de Privacidade.</a></p>
+                </div>
+
+                <div class="center box w-100">
+                  <!-- <div class="button-black box mb-22"> -->
+                    <button class="button-black box mb-22" type="submit">Cadastrar</button>
+                    <!-- <a href="/login"></a> -->
+                  <!-- </div> -->
+  
+                  <div class="button-cancel secondary-font">
+                    <a href="/">Cancelar</a>
+                  </div>
               </form>
-              <div class="flex mb-22">
-                <input class="mr-5" type="checkbox">
-                <p class="normal-text">Eu declaro que li e aceito todos os Termos de Uso contidos na<a class="link" href="#">Política de Privacidade.</a></p>
-              </div>
+              
 
-              <div class="center box w-100">
-                <div class="button-black box mb-22">
-                  <a href="/login">Cadastrar</a>
-                </div>
-
-                <div class="button-cancel secondary-font">
-                  <a href="/">Cancelar</a>
-                </div>
+              
               </div>
             </div>
           </div>
