@@ -9,10 +9,15 @@ module.exports = {
       consultorios.push(
         {
           id: i,
-          CNPJ:`12345678912322${i}`,
-          email: `consultorio1${i}@teste.com`,
+          email: `consultorio${i}@teste.com`,
+          nome: `Consultório ${i}`,
+          cep: `0888888${i}`,
+          uf: `RJ`,
+          endereco: `Rua Das Flores`,
+          numero: `1${i}`,
+          telefone: `21 98888-888${i}`,
+          complemento: `Lote ${i}`,
           senha: bcrypt.hashSync('123456', 10),
-          
           createdAt: (new Date()).toJSON().substring(0,19)
         },       
       )
