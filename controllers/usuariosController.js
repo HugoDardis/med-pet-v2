@@ -93,4 +93,4 @@ module.exports = {
 //         next();
 //     }
 // }
-
+// module.exports = verificaSeLogado;
