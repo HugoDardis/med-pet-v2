@@ -70,6 +70,7 @@ label {
 }
 
 input[type="text" i],
+input[type="password" i],
 input[type="number" i],
 input[type="email"] {
   height: 48px;
