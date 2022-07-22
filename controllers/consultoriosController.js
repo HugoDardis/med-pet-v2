@@ -8,6 +8,8 @@ module.exports ={
             const {CNPJ, email, senha} = req.body;
 
             return res.json(req.body);
+
+            let senhaCript = bcrypt.hashSync(senha, 10);
         }
     catch (error) {
         console.log(error);
