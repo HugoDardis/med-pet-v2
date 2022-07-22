@@ -1,10 +1,32 @@
-const { Cliente } = require('../models');
+const {
+    Cliente
+} = require('../models');
 const bcrypt = require('bcrypt');
 
 
 module.exports = {
     login: (req, res) => {
-        res.send("Controller para realizar login!");
+        const {
+            email,
+            senha
+        } = req.body;
+        Cliente.findOne({
+            where: {
+                email: email
+            }
+        }).then(cliente => {
+            if (cliente) {
+                if (bcrypt.compareSync(senha, cliente.senha)) {
+                    req.session.cliente = cliente;
+                    res.redirect('/home01');
+                } else {
+                    res.redirect('/login');
+                }
+            }
+        }).catch(err => {
+            console.log(err);
+        });
+
     },
 
     novoUsuario: async (req, res) => {
@@ -14,7 +36,7 @@ module.exports = {
             email,
             senha,
         } = req.body;
-        
+
         let senhaCript = bcrypt.hashSync(senha, 10);
         const novoCliente = await Cliente.create({
             CPF,
@@ -24,9 +46,8 @@ module.exports = {
         });
         req.session.cliente = novoCliente;
         return res.redirect('/home01');
-
     },
-    
+
     listarClientes: async (req, res) => {
         const clientes = await Cliente.findAll();
         res.send(clientes);
@@ -70,7 +91,7 @@ module.exports = {
         const {
             id
         } = req.params;
-        
+
         const cliente = await Cliente.destroy({
             where: {
                 id,
