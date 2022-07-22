@@ -5,30 +5,54 @@ const Consultorio = (sequelize, DataTypes) => {
         {
             id: {
                 type: DataTypes.INTEGER,
-                primaryKey: true,
                 autoIncrement: true,
-                allowNull:false
+                allowNull: false,
+                primaryKey: true
             },
-            CNPJ: {
-                type: DataTypes.STRING(45),
+            nome: {
+                type: DataTypes.STRING(120),
                 allowNull: false
+            },
+            cep: {
+                type: DataTypes.STRING(8),
+                allowNull: false
+            },
+            uf: {
+                type: DataTypes.STRING(2),
+                allowNull: false
+            },
+            endereco: {
+                type: DataTypes.STRING(600),
+                allowNull: false
+            },
+            numero: {
+                type: DataTypes.STRING(6),
+                allowNull: true
             },
             email: {
                 type: DataTypes.STRING(45),
                 allowNull: false,
-                unique:true
-              },
-              senha:{
+                unique: true
+            },
+            telefone: {
+                type: DataTypes.STRING(15),
+                allowNull: false
+            },
+            complemento: {
+                type: DataTypes.STRING(100),
+                allowNull: true
+            },
+            senha: {
                 type: DataTypes.STRING(64),
                 allowNull: false
-              }
-            
-        },{
-            tableName: "Consultorios"
-        }
+            }
+
+        }, {
+        tableName: "Consultorios"
+    }
     );
 
-    Consultorio.associate = (models) => {}
+    Consultorio.associate = (models) => { }
 
     return consultorio;
 }
