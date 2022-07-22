@@ -54,6 +54,12 @@ const IndexController = {
         })
     },
 
+    verPaginaCadastrarPet: (req, res) => {
+        res.render('cadastrar-pet', {
+            title: "MEDPET - CADASTRAR PET"
+        })
+    },
+
     verPaginaDeCadastrarConsultorio: (req, res) => {
         res.render('cadastrar-consultorio', {
             title: "CADASTRAR - CONSULTORIO"

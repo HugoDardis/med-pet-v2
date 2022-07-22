@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./components/head.ejs') %>
+
+    <body>
+        <%- include('./components/header.ejs')%>
+            <main>
+                <form id="registrarPetForm" method="POST" action="/registrar">
+                    <div class="flex space-between">
+                        <span class="last-name w-50 mr-5">
+                            <label for="RGA">RGA</label>
+                            <input placeholder="Digite RGA do Pet opcinal" name="RGA" type="text">
+                        </span>
+                        <span class="name w-50 mr-5">
+                            <label for="nome">Nome do Pet</label>
+                            <input placeholder="Digite o Nome do Pet" name="nome" type="text">
+                        </span> 
+                    </div>
+
+                    <div class="flex space-between">
+                        <span class="e-mail w-50 mr-5">
+                            <label for="raca">Raça</label>
+                            <input name="raca" type="text" placeholder="Digite Raça do Pet">
+                        </span>
+                        <span class="telefone w-50 mr-5">
+                            <label for="tipoAnimal">tipo Animal</label>
+                            <input placeholder="Digite o tipo do animal" name="tipoAnimal" type="text">
+                        </span>
+                    </div>
+                    <div class="center box w-100">
+                        <button class="button-black box mb-22" type="submit">Cadastrar</button>
+                        <div class="button-cancel secondary-font">
+                            <a href="/home01">Cancelar</a>
+                        </div>
+                </form>
+            </main>
+
+            <%- include('./components/footer.ejs')%>
+    </body>
+
+</html>
