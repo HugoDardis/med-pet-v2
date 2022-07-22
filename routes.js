@@ -24,6 +24,8 @@ routes.post('/registrar', UsuariosController.novoUsuario);
 
 routes.get('/home01', VerificaClienteLogado, IndexController.verPaginaDeHome01);
 
+routes.get('/homeConsultorio', IndexController.verPaginaHomeConsultorio);
+
 routes.post('/cadastrar-consultorio', ConsultoriosController.cadastrar);
 
 routes.get('/cadastrar-consultorio', IndexController.verPaginaDeCadastrarConsultorio); 

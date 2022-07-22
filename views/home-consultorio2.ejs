@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./components/head.ejs') %>
+<body>
+    <%- include('./components/header.ejs')%>
+    <header>
+        <ul>
+            <li><a href="#">Agenda</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#"><i class="material-symbols-outlined">logout</i></a></li>
+        </ul>
+    </header>
+    <main class="container">
+        <h2>Serviços Prestados</h2>
+        <section class="bg-forms">
+            <label class="mb-22">
+                <input type="checkbox" class="mr-5" name="svc_1" value="1">
+                <span>Serviço X</span>
+            </label>
+            <label class="mb-22" >
+                <input type="checkbox" class="mr-5" name="svc_1" value="1">
+                <span>Serviço X</span>
+            </label>
+            <label>
+                <input type="checkbox" class="mr-5" name="svc_1" value="1">
+                <span>Serviço X</span>
+            </label>
+        </section>
+    </main>
+
+    <%- include('./components/footer.ejs')%>
+</body>
+</html>
