@@ -8,6 +8,7 @@ module.exports ={
         const {nome, email, senha, cep, uf, endereco, numero, telefone, complemento} = req.body;
         try {
             
+            console.log(req.body)
             senhaCript = bcrypt.hashSync(senha, 10);
         } catch (error) {
             console.log(error);
@@ -26,7 +27,11 @@ module.exports ={
             complemento
         });
         
+        req.session.Consultorio = novoConsultorio;
+        return res.redirect('/homeConsultorio')
+        
         res.send(novoConsultorio);
+
 
     } 
 }
