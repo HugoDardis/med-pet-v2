@@ -33,5 +33,11 @@ module.exports ={
         res.send(novoConsultorio);
 
 
-    } 
+    },
+    listarServicos: async (req, res) => {
+        const servicos = await servicos.findAll();
+        res.send(servicos);
+    },
+
+    
 }

@@ -13,6 +13,9 @@ const VerificaConsultorioLogado = require('./middlewares/VerificaConsultorioLoga
 
 routes.get('/', IndexController.verPaginaInicial);
 
+
+routes.get('/servicos', IndexController.verPaginaDeServicos);
+
 routes.get('/contato', IndexController.verPaginaContato);
 
 routes.get('/produtos', IndexController.verPaginaDeProdutos);
