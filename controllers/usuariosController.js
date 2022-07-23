@@ -100,7 +100,8 @@ module.exports = {
         });
 
         res.send(cliente);
-    }
+    },
+    
 }
 
 

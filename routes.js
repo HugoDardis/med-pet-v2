@@ -6,6 +6,7 @@ const routes = express.Router();
 const IndexController = require('./controllers/IndexController');
 const UsuariosController = require('./controllers/UsuariosController');
 const ConsultoriosController = require('./controllers/ConsultoriosController');
+const petController = require('./controllers/petController');
 const VerificaClienteLogado = require('./middlewares/VerificaClienteLogado');
 const VerificaConsultorioLogado = require('./middlewares/VerificaConsultorioLogado');
 
@@ -27,6 +28,10 @@ routes.post('/registrar', UsuariosController.novoUsuario);
 routes.get('/home01', VerificaClienteLogado, IndexController.verPaginaDeHome01);
 
 routes.get('/homeConsultorio', IndexController.verPaginaHomeConsultorio);
+
+routes.get('/cadastrarPet', IndexController.verPaginaCadastrarPet);
+
+routes.post('/cadastrarPet', petController.cadastrarPet);
 
 routes.post('/cadastrar-consultorio', ConsultoriosController.cadastrar);
 
