@@ -8,8 +8,13 @@ const UsuariosController = require('./controllers/UsuariosController');
 const ConsultoriosController = require('./controllers/ConsultoriosController');
 const petController = require('./controllers/petController');
 const VerificaClienteLogado = require('./middlewares/VerificaClienteLogado');
+const VerificaConsultorioLogado = require('./middlewares/VerificaConsultorioLogado');
+
 
 routes.get('/', IndexController.verPaginaInicial);
+
+
+routes.get('/servicos', IndexController.verPaginaDeServicos);
 
 routes.get('/contato', IndexController.verPaginaContato);
 
@@ -32,6 +37,8 @@ routes.get('/cadastrarPet', IndexController.verPaginaCadastrarPet);
 routes.post('/cadastrarPet', petController.cadastrarPet);
 
 routes.post('/cadastrar-consultorio', ConsultoriosController.cadastrar);
+
+routes.get('/homeConsultorio', VerificaConsultorioLogado, IndexController.verPaginaHomeConsultorio);
 
 routes.get('/cadastrar-consultorio', IndexController.verPaginaDeCadastrarConsultorio); 
 

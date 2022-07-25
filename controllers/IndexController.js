@@ -64,6 +64,12 @@ const IndexController = {
         res.render('cadastrar-consultorio', {
             title: "CADASTRAR - CONSULTORIO"
         })
+    },
+
+    verPaginaDeServicos: (req, res) => {
+        res.render('servicos',{
+            title: "SERVIÇOS"
+        })
     }
 }
 
