@@ -1,0 +1,40 @@
+.home01-img
+{
+    margin-left: 10px;
+    width: 90%;
+}
+
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title
+{
+    line-height: 50px;
+    margin-left: 30px;
+    font-size: 45px;
+    color: #8b5ff3;
+
+}
+
+.p
+{
+    margin-top: 20px;
+    line-height: 25px;
+    max-width: 800px;
+}
+
+cite
+{
+    margin-left: 200px;
+}

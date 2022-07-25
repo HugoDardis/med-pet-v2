@@ -1,0 +1,95 @@
+body
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.background-header {
+  background-color: #151920;
+  height: 90px;
+}
+
+.logo-header {
+  Width: 5em;
+  Height: 5em;
+}
+
+/*Barra de navegação*/
+
+.nav-bar {
+  height: 90px;
+}
+.nav-bar button {
+  padding: 0 25px;
+  color: #7A48EB;
+}
+
+.w-20 {
+  width: 25%;
+}
+
+
+.button-header {
+  background: none;
+  border: none;
+  
+  text-decoration: none;
+}
+.button-header a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #7A48EB;
+  transition: color .4s ease;
+}
+
+ a:hover
+ {
+  color: white;
+ }
+
+.buscar {
+  color: #7A48EB;
+  height: 90px;
+  width: 25%;
+  justify-content: flex-end;
+  border: none;
+}
+
+.buscar input
+{
+  width: 50%;
+  border-radius: 20px;
+
+}
+
+.buscar a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #7A48EB;
+}
+
+.lupa {
+  height: 16px;
+  width: 22px;
+  padding-right: 6px;
+  margin-right: 200px;
+  position: absolute;
+}
+
+.user-bg {
+  height: 56px;
+  width: 56px;
+  border-radius: 50px;
+  background-color: #F3F6F7;
+  position: relative;
+  margin: 10px 10px;
+}
+
+
