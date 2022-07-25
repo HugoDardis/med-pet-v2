@@ -5,6 +5,7 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,},
 
     RGA: DataTypes.STRING,
+    nome: DataTypes.STRING,
     raca: DataTypes.STRING,
     tipoAnimal: DataTypes.STRING,
     cliente_id: DataTypes.STRING
@@ -12,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
   , 
   {
     tableName: 'pet',
-    timestamps: false
+    timestamps: true
   }
   );
 

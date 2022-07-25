@@ -1,5 +1,5 @@
 const {
-    pet
+    Pet
 } = require('../models');
 const bcrypt = require('bcrypt');
 
@@ -11,27 +11,23 @@ module.exports = {
             nome,
             raca,
             tipoAnimal,
-            cliente_id: references_cliente_id = {
-                model: {
-                    tableName: "clientes"
-                },
-                key: "id"
-            }
+           
         } = req.body;
+        console.log(req.body);
 
-        const novoPet = await pet.create({
+        const novoPet = await Pet.create({
             RGA,
             nome,
             raca,
             tipoAnimal,
-            references_cliente_id
+            cliente_id: req.session.cliente.id  
         });
-        res.send(novoPet);
-        //return res.redirect('/home01');
+        //res.send(novoPet);
+        return res.redirect('/home01');
     },
 
     listarPets: async (req, res) => {
-        const pets = await pet.findAll();
+        const pets = await Pet.findAll();
         res.send(pets);
     },
 
@@ -39,7 +35,7 @@ module.exports = {
         const {
             id
         } = req.params;
-        const pet = await pet.findByPk(id);
+        const pet = await Pet.findByPk(id);
         res.send(pet);
     }
 
